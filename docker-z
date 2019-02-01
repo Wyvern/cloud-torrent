@@ -20,7 +20,7 @@ RUN set -ex \
 	bash \
 	gcc \
 	musl-dev \
-	libressl \
+	openssl \
 	git \
 	go \
 	curl \
