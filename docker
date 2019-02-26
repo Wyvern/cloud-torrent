@@ -12,7 +12,7 @@ ENV CGO_ENABLED 0
 # 2. build cloud-torrent alpine binary
 # 3. remove build programs
 RUN set -ex \
-	&& apk update \
+	&& apk update && apk upgrade \
 	&& apk add ca-certificates \
 	&& apk add --no-cache --virtual .build-deps \
 	bash \
